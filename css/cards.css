@@ -1,0 +1,41 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 254px);
+  padding: 20px;
+}
+
+.cards div {
+  border-bottom: 0.5px solid #cdc9c9;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.cards p {
+  padding: 10px;
+}
+
+.cards-icon {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 682px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+  }
+  .cards div {
+    border: none;
+  }
+}
+
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+  }
+}

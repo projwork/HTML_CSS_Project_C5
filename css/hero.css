@@ -1,0 +1,68 @@
+.hero {
+  background-image: url("../images/hero.jfif");
+  height: 482px;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+/* using sudo elements for hero overlay */
+
+.hero::before {
+  content: "";
+  position: absolute;
+  background: #000000ab;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.hero-text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  gap: 20px;
+  color: #ffffff;
+  padding: 0px 20px;
+}
+.hero-text p {
+  font-size: 12px;
+}
+
+.hero-text p:first-of-type {
+  padding: 5px 0px;
+  border-bottom: 2px solid #c82424;
+}
+
+.hero-text p:last-of-type {
+  max-width: 437px;
+}
+
+h1 {
+  font-size: 26px;
+}
+
+.hero-btn {
+  display: flex;
+  gap: 20px;
+}
+
+.hero-btn button {
+  font-size: 12px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.hero-btn button:first-of-type {
+  background: #c82424;
+  color: #ffffff;
+  border: 1px solid #c82424;
+}
+
+.hero-btn button:last-of-type {
+  background: transparent;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+}

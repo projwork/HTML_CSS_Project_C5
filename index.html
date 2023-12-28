@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final HTML-CSS Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+    <script src="./js/feather.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <!-- topbar start -->
+        <div class="topbar">
+          <div class="topcontact">
+            <div class="topmailtext">
+              <i data-feather="mail"></i>
+              <span>cohort5@azubiafrica.org</span>
+            </div>
+            <div class="topphonetext">
+              <i data-feather="phone"></i>
+              <span>+233 1234 56 79</span>
+            </div>
+          </div>
+
+          <div class="topsocials">
+            <did class="topicons">
+              <div class="icon-container">
+                <i class="icon" data-feather="facebook"></i>
+              </div>
+
+              <div class="icon-container">
+                <i data-feather="twitter"></i>
+              </div>
+
+              <div class="icon-container">
+                <i data-feather="instagram"></i>
+              </div>
+            </did>
+            <div class="topbutton">
+              <button class="btn">Get a schedule</button>
+            </div>
+          </div>
+        </div>
+        <!-- topbar end -->
+
+        <!-- menubar start -->
+        <div class="menubar">
+          <div class="logo">
+            <img src="./images/logo.png" alt="site logo" />
+          </div>
+          <nav>
+            <div class="mobile-menu" onclick="toggleOverlay()">
+              <i data-feather="menu" class="navicon"></i>
+            </div>
+
+            <div class="navitems">
+              <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Video</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="">Partners</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <!-- menubar end -->
+      </div>
+      <div class="overlay-nav">
+        <span onclick="toggleOverlay()">
+          <i data-feather="x" class="close-menu"></i>
+        </span>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">Video</a></li>
+          <li><a href="">Contact</a></li>
+          <li><a href="">Partners</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-text">
+        <p>Right way...</p>
+
+        <h1>
+          It’s Our Pride <br />
+          To Fight For Your Dream
+        </h1>
+        <p>
+          But I must explain to you how all this mistaken idea of denouncing
+          pleasure and praising pain was born and I will give you a complete
+          account of the system, and expound the actual teachings of the great
+          explorer of the truth.
+        </p>
+
+        <div class="hero-btn">
+          <button>Free Consulting</button>
+
+          <button>Learn More</button>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="cards">
+        <div>
+          <h2>Court Performance</h2>
+          <i data-feather="home" class="about-icon"></i>
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque.
+          </p>
+        </div>
+
+        <div>
+          <h2>Document Review</h2>
+          <i data-feather="file-text" class="about-icon"></i>
+
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque.
+          </p>
+        </div>
+        <div>
+          <h2>Expert Attorney</h2>
+          <i data-feather="anchor" class="about-icon"></i>
+
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque.
+          </p>
+        </div>
+        <div>
+          <h2>Case Dismissed</h2>
+          <i data-feather="bell" class="about-icon"></i>
+
+          <p>
+            At vero eos et accusamus et iusto odio dignissimos ducimus qui
+            blanditiis praesentium voluptatum deleniti atque.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="about-section">
+          <div>
+            <img
+              class="about-image"
+              src="./images/aboutimg.png"
+              alt="about image"
+            />
+          </div>
+          <div>
+            <p class="aboutus-text">About Us</p>
+            <div class="red-underline"></div>
+            <h1 class="about-heading">
+              We Are Top Lawyers With <span class="red-text">25 Years</span
+              ><br class="break-display" />
+              Of Experience
+            </h1>
+            <p class="about-us_paragraph">
+              On the other hand, we denounce with righteous indignation and
+              dislike men who are so beguiled and demoralized by the charms of
+              pleasure of the moment, so blinded by desire, that they cannot
+              foresee the pain and trouble that are bound to ensue.
+            </p>
+            <div class="about-points">
+              <div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">100% Success Rate</span>
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text"
+                    >No Need Extra Cost for Consultation</span
+                  >
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">Expert Legal Service</span>
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">Highly Recommendation</span>
+                </div>
+              </div>
+              <div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">Fast Support</span>
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">High Court Performance</span>
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">Free Counseling</span>
+                </div>
+                <div class="about-item">
+                  <img
+                    class="icon-size"
+                    src="./images/check-square.svg"
+                    alt="checked points"
+                  />
+                  <span class="point-text">Quick Complete Case</span>
+                </div>
+              </div>
+
+              <div class="pt-15">
+                <button class="btn-sm">Free Consulting</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="multimedia-section">
+          <div class="red-card">
+            <div class="card-container">
+              <h1 class="review-header">
+                We Fight For Right, Meet Us To Solve Your Legal Problem In Right
+                Way
+              </h1>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi id est laborum et dolorum fuga.
+              </p>
+              <div class="signature"></div>
+              <p class="reviewer-name">Anthomas Darlos</p>
+              <p>Senior Attorney & Founder of Atorn</p>
+            </div>
+          </div>
+          <div class="video">
+            <video controls>
+              <source src="./videos/HTMLin5minutes.mp4" type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>footer section</footer>
+    <script>
+      feather.replace();
+    </script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
