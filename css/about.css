@@ -30,10 +30,6 @@
   padding-top: 30px;
 }
 
-.break-display {
-  display: none;
-}
-
 .red-text {
   color: #c82424;
 }
@@ -174,10 +170,7 @@
 
   .about-heading {
     font-size: 33px;
-  }
-
-  .break-display {
-    display: block;
+    width: 90%;
   }
 
   .icon-size {
@@ -186,7 +179,7 @@
   }
 
   .btn-sm {
-    padding: 14px 25px;
+    padding: 15px 25px;
     border-radius: 5px;
     font-size: 14px;
     font-style: normal;
@@ -215,10 +208,6 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 30px;
-  }
-
-  .break-display {
-    display: none;
   }
 
   .about-points {

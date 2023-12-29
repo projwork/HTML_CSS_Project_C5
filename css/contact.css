@@ -15,7 +15,7 @@
   line-height: normal;
 }
 
-.contact-info p:first-of-type {
+.contact-info__paragraph {
   color: #fff;
   font-size: 13px;
   font-style: normal;
@@ -26,7 +26,7 @@
 }
 
 .phonenumber,
-.contact-info p:last-of-type {
+.social-paragraph {
   color: #fff;
   font-size: 15px;
   font-style: normal;
@@ -35,7 +35,7 @@
 }
 
 .phone-value,
-.contact-form h2:first-of-type {
+.contact-form p:first-of-type {
   color: #fff;
   font-size: 18px;
   font-style: normal;
@@ -63,6 +63,7 @@
 .input-container {
   position: relative;
   padding-top: 27px;
+  width: 100%;
 }
 
 .input-icon {
@@ -91,6 +92,7 @@
   font-weight: 400;
   line-height: normal;
   outline: none;
+  border: 1px solid #d9d9d9;
 }
 
 .input-container input:focus {
@@ -153,11 +155,72 @@ textarea:focus {
     background-image: url("../images/contact-bg-md.png");
     height: 1035px;
   }
+
+  .contact-info h2:first-of-type {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .contact-info__paragraph {
+    text-align: start;
+    padding: 40px 55px;
+    font-size: 14px;
+  }
+
+  .phonenumber,
+  .social-paragraph {
+    font-size: 17px;
+  }
+
+  .phone-value {
+    font-size: 25px;
+  }
+
+  .pt-40 {
+    padding-top: 30px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: row;
+    column-gap: 45px;
+  }
 }
 
 @media (min-width: 1024px) {
   .contact-section {
     background-image: url("../images/contact-bg-lg.png");
     height: 727px;
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 30px;
+    padding: 90px 25px;
+  }
+
+  .pt-40 {
+    padding-top: 0;
+  }
+
+  .contact-info h2:first-of-type {
+    text-align: start;
+  }
+
+  .contact-info__paragraph {
+    padding: 30px 0px;
+    width: 77%;
+  }
+
+  .contact-info-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contact-phone-row,
+  .contact-social-row {
+    width: 100%;
+  }
+
+  .phone-value {
+    font-size: 23px;
   }
 }
