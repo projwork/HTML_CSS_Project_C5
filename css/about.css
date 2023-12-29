@@ -84,6 +84,14 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  outline: none;
+}
+
+.btn-sm:hover {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+  color: #fff;
+  background-color: dodgerblue;
 }
 
 .multimedia-section {
