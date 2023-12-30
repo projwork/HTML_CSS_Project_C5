@@ -66,3 +66,10 @@ h1 {
   color: #ffffff;
   border: 1px solid #ffffff;
 }
+
+.hero-btn button:hover {
+  border-color: dodgerblue;
+  box-shadow: 0 0 8px 0 dodgerblue;
+  color: #fff;
+  background-color: dodgerblue;
+}
